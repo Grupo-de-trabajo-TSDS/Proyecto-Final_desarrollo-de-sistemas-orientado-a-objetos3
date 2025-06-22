@@ -51,7 +51,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(382, 52);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "CLUB DEPORTIVO";
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // lblUsuario
             // 
@@ -63,7 +62,6 @@
             this.lblUsuario.Size = new System.Drawing.Size(84, 20);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "USUARIO";
-            this.lblUsuario.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblContraseña
             // 
@@ -75,31 +73,30 @@
             this.lblContraseña.Size = new System.Drawing.Size(119, 20);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "CONTRASEÑA";
-            this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
             // txtUsuario
             // 
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(411, 133);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(209, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(209, 22);
             this.txtUsuario.TabIndex = 3;
             this.toolTip1.SetToolTip(this.txtUsuario, "Nombre de Usuario (admin)");
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtContraseña
             // 
             this.txtContraseña.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(411, 198);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(209, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(209, 22);
             this.txtContraseña.TabIndex = 4;
             this.toolTip1.SetToolTip(this.txtContraseña, "Contraseña (1234)");
             this.txtContraseña.UseSystemPasswordChar = true;
-            this.txtContraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnIngresar
             // 
@@ -122,7 +119,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // toolTip1
             // 
@@ -150,7 +146,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmlogin_FormClosed);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

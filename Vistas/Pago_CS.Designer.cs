@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final.Vistas
 {
-    partial class frmPagoCuotaSocial
+    partial class frmpagoCuotaSocial
     {
         /// <summary>
         /// Required designer variable.
@@ -31,20 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSocioDni = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.lblTipoDeSocio = new System.Windows.Forms.Label();
+            this.btnpagado = new System.Windows.Forms.Button();
+            this.btnvolver = new System.Windows.Forms.Button();
+            this.lblMonto = new System.Windows.Forms.Label();
             this.lblFormasPago = new System.Windows.Forms.Label();
             this.cboFormasDePago = new System.Windows.Forms.ComboBox();
-            this.cboTipoSocio = new System.Windows.Forms.ComboBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 42);
+            this.label1.Location = new System.Drawing.Point(230, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(341, 31);
             this.label1.TabIndex = 0;
@@ -52,68 +51,67 @@
             // 
             // txtSocioDni
             // 
-            this.txtSocioDni.Location = new System.Drawing.Point(266, 123);
+            this.txtSocioDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSocioDni.Location = new System.Drawing.Point(350, 123);
             this.txtSocioDni.Name = "txtSocioDni";
-            this.txtSocioDni.Size = new System.Drawing.Size(100, 20);
+            this.txtSocioDni.Size = new System.Drawing.Size(100, 26);
             this.txtSocioDni.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(234, 100);
+            this.label2.Location = new System.Drawing.Point(310, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dni del Socio solicitante:";
             // 
-            // button1
+            // btnpagado
             // 
-            this.button1.Location = new System.Drawing.Point(284, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnpagado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpagado.Location = new System.Drawing.Point(296, 292);
+            this.btnpagado.Name = "btnpagado";
+            this.btnpagado.Size = new System.Drawing.Size(94, 38);
+            this.btnpagado.TabIndex = 5;
+            this.btnpagado.Text = "Pagado";
+            this.btnpagado.UseVisualStyleBackColor = true;
+            this.btnpagado.Click += new System.EventHandler(this.btnpagado_Click);
             // 
-            // button2
+            // btnvolver
             // 
-            this.button2.Location = new System.Drawing.Point(182, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnvolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvolver.Location = new System.Drawing.Point(418, 291);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(86, 39);
+            this.btnvolver.TabIndex = 7;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = true;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
             // 
-            // button3
+            // lblMonto
             // 
-            this.button3.Location = new System.Drawing.Point(387, 291);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // lblTipoDeSocio
-            // 
-            this.lblTipoDeSocio.AutoSize = true;
-            this.lblTipoDeSocio.Location = new System.Drawing.Point(102, 163);
-            this.lblTipoDeSocio.Name = "lblTipoDeSocio";
-            this.lblTipoDeSocio.Size = new System.Drawing.Size(71, 13);
-            this.lblTipoDeSocio.TabIndex = 8;
-            this.lblTipoDeSocio.Text = "Tipo de socio";
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonto.Location = new System.Drawing.Point(218, 169);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(112, 20);
+            this.lblMonto.TabIndex = 8;
+            this.lblMonto.Text = "Monto a pagar";
             // 
             // lblFormasPago
             // 
             this.lblFormasPago.AutoSize = true;
-            this.lblFormasPago.Location = new System.Drawing.Point(371, 163);
+            this.lblFormasPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormasPago.Location = new System.Drawing.Point(463, 172);
             this.lblFormasPago.Name = "lblFormasPago";
-            this.lblFormasPago.Size = new System.Drawing.Size(152, 13);
+            this.lblFormasPago.Size = new System.Drawing.Size(117, 20);
             this.lblFormasPago.TabIndex = 9;
-            this.lblFormasPago.Text = "Seleccione una forma de pago";
+            this.lblFormasPago.Text = "Forma de pago";
             // 
             // cboFormasDePago
             // 
+            this.cboFormasDePago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFormasDePago.FormattingEnabled = true;
             this.cboFormasDePago.Items.AddRange(new object[] {
             "Efectivo",
@@ -121,39 +119,39 @@
             "Tarjeta de Crédito 2 cuotas",
             "Tarjeta de Crédito 3 cuotas",
             "Tarjeta de Débito"});
-            this.cboFormasDePago.Location = new System.Drawing.Point(387, 180);
+            this.cboFormasDePago.Location = new System.Drawing.Point(461, 205);
             this.cboFormasDePago.Name = "cboFormasDePago";
-            this.cboFormasDePago.Size = new System.Drawing.Size(121, 21);
+            this.cboFormasDePago.Size = new System.Drawing.Size(121, 28);
             this.cboFormasDePago.TabIndex = 10;
+            this.cboFormasDePago.SelectedIndexChanged += new System.EventHandler(this.cboFormasDePago_SelectedIndexChanged);
             // 
-            // cboTipoSocio
+            // txtMonto
             // 
-            this.cboTipoSocio.FormattingEnabled = true;
-            this.cboTipoSocio.Location = new System.Drawing.Point(83, 179);
-            this.cboTipoSocio.Name = "cboTipoSocio";
-            this.cboTipoSocio.Size = new System.Drawing.Size(121, 21);
-            this.cboTipoSocio.TabIndex = 11;
-            this.cboTipoSocio.SelectedIndexChanged += new System.EventHandler(this.cboFormasDePago_SelectedIndexChanged);
+            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(220, 205);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(100, 26);
+            this.txtMonto.TabIndex = 13;
+            this.txtMonto.Leave += new System.EventHandler(this.txtMonto_Leave);
             // 
-            // frmPagoCuotaSocial
+            // frmpagoCuotaSocial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 327);
-            this.Controls.Add(this.cboTipoSocio);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.cboFormasDePago);
             this.Controls.Add(this.lblFormasPago);
-            this.Controls.Add(this.lblTipoDeSocio);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblMonto);
+            this.Controls.Add(this.btnvolver);
+            this.Controls.Add(this.btnpagado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSocioDni);
             this.Controls.Add(this.label1);
             this.Location = new System.Drawing.Point(179, 18);
-            this.Name = "frmPagoCuotaSocial";
+            this.Name = "frmpagoCuotaSocial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pago Cuota Social";
-            this.Load += new System.EventHandler(this.frmPagoCuotaSocial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,12 +162,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSocioDni;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblTipoDeSocio;
+        private System.Windows.Forms.Button btnpagado;
+        private System.Windows.Forms.Button btnvolver;
+        private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Label lblFormasPago;
         private System.Windows.Forms.ComboBox cboFormasDePago;
-        private System.Windows.Forms.ComboBox cboTipoSocio;
+        private System.Windows.Forms.TextBox txtMonto;
     }
 }

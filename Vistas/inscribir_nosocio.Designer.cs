@@ -133,7 +133,6 @@
             this.txtDniNoSocio.Text = "DNI";
             this.txtDniNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtDniNoSocio, "Ingrese DNI");
-            this.txtDniNoSocio.Leave += new System.EventHandler(this.txtDNI_Leave);
             // 
             // txtNombreNoSocio
             // 

@@ -74,6 +74,11 @@ namespace Proyecto_Final.Vistas
                 videoSource.SignalToStop();
 
         }
+
+        private void FrmGenerarCarnet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

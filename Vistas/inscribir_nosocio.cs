@@ -25,25 +25,6 @@ namespace Proyecto_Final.Vistas
 
         }
 
-        private void txtDNI_Leave(object sender, EventArgs e)
-        {
-            string dni = txtDniNoSocio.Text.Trim();
-            if (!Utilidades.ValidarNumerico(txtDniNoSocio, "DNI"))
-            {
-                txtDniNoSocio.Focus();
-            }
-            else
-            {
-                if (NoSocio.ExisteNoSocioPorDNI(dni))
-                {
-                    MessageBox.Show("Este DNI ya está registrado.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtDniNoSocio.Clear();
-                    txtDniNoSocio.Focus();
-                }
-            }
-            
-        }
-
 
         private void btnInscribir_Click(object sender, EventArgs e)
         {
@@ -64,12 +45,12 @@ namespace Proyecto_Final.Vistas
                 txtFichaMedicaNoSocio.Text.Trim()                
             );
 
-            bool guardado = NoSocio.inscripcionnosocio(nuevo);
+            bool guardado = NoSocio.inscripcionNoSocio(nuevo);
 
             if (guardado)
             {
                 MessageBox.Show("Inscripción exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                new frmPrincipal().Show();
+                new frmInicial().Show();
                 this.Hide();
                   // O volvé al formulario principal como lo tengas definido
             }
@@ -83,7 +64,7 @@ namespace Proyecto_Final.Vistas
         private void btnVolver_Click(object sender, EventArgs e)
         {
             // Abrir frmPrincipal
-            frmPrincipal inicio = new frmPrincipal();
+            frmInicial inicio = new frmInicial();
             inicio.Show();
 
             // Cerrar el formulario actual

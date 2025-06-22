@@ -55,22 +55,38 @@ public class Socio : Persona
 
     //getter y setter
     public bool Estado { get { return estado; } set { estado = value; } }
- 
-   
 
-//methods    
 
-    public void suspender()
+
+    //methods    
+
+    public bool pagarCuota(double valor, string modo)
     {
-        
-    }
-    
-    public void generarCarnet()
-    {
-        
+        try
+        {
+            using (var conn = new Conexion())
+            {
+                var con = conn.Abrir();
+                string query = @"INSERT INTO Cuota (idsocio, preciocuotasocial, fechapago, metodopago)
+                             VALUES (@dni, @valor, @fecha, @modo)";
+                using (var cmd = new MySqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@dni", this.Dni);
+                    cmd.Parameters.AddWithValue("@valor", valor.ToString());
+                    cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@modo", modo);
+                    int resultado = cmd.ExecuteNonQuery();
+                    return resultado > 0;
+                }
+            }
+        }
+        catch
+        {
+            return false;
+        }
     }
 
-    public static bool inscripcionsocio(Socio nuevo)
+    public bool inscripcionSocio(Socio nuevo)
     {
         try
         {
@@ -105,25 +121,6 @@ public class Socio : Persona
             return false;
         }
     }
-
-    public static bool ExisteSocioPorDNI(string dni)
-    {
-        using (Conexion conpar = new Conexion())
-        {
-            using (MySqlConnection conn = conpar.Abrir())
-            {
-                string query = "SELECT COUNT(*) FROM Socio WHERE dni = @dni";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@dni", dni);
-                    int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
-                    return cantidad > 0;
-                }
-            }
-        }
-    }
-
 }
 
 public class NoSocio : Persona
@@ -136,19 +133,8 @@ public class NoSocio : Persona
     }
 
     //methods
-   
-
-    public void registrarActividad()
-    {
-        //code to register Non-member activity
-    }
-
-    public void abonarActividad()
-    {
-        //code to pay for a non-member activity
-    }
-
-    public static bool inscripcionnosocio(NoSocio nuevo)
+  
+    public bool inscripcionNoSocio(NoSocio nuevo)
     {
         try
         {
@@ -171,7 +157,6 @@ public class NoSocio : Persona
                     cmd.Parameters.AddWithValue("@telefono", nuevo.Telefono);
                     cmd.Parameters.AddWithValue("@conturgencia", nuevo.Conturgencia);
                     cmd.Parameters.AddWithValue("@fichamed", nuevo.Fichamed);
-                    
 
                     int resultado = cmd.ExecuteNonQuery();
                     return resultado > 0;
@@ -184,21 +169,31 @@ public class NoSocio : Persona
         }
     }
 
-    public static bool ExisteNoSocioPorDNI(string dni)
+    public bool pagarActividad(string idactividad, double valor, string modo)
     {
-        using (Conexion conpar = new Conexion())
+        try
         {
-            using (MySqlConnection conn = conpar.Abrir())
+            using (var conn = new Conexion())
             {
-                string query = "SELECT COUNT(*) FROM NoSocio WHERE dni = @dni";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                var con = conn.Abrir();
+                string query = @"INSERT INTO Pago_Actividad (idactividad, idnsocio, fechapago, precioactividad, metodopago)
+                             VALUES (@idactividad, @dni, @valor, @fecha, @modo)";
+                using (var cmd = new MySqlCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("@dni", dni);
-                    int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
-                    return cantidad > 0;
+                    cmd.Parameters.AddWithValue("@idactividad", idactividad.ToString());
+                    cmd.Parameters.AddWithValue("@dni", this.Dni);
+                    cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@valor", valor.ToString());
+                    cmd.Parameters.AddWithValue("@modo", modo);
+
+                    int resultado = cmd.ExecuteNonQuery();
+                    return resultado > 0;
                 }
             }
+        }
+        catch
+        {
+            return false;
         }
     }
 }

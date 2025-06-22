@@ -5,6 +5,7 @@ namespace Proyecto_Final.Vistas
 {
     public partial class frmPrincipal : Form
     {
+        private string _dni;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -13,8 +14,7 @@ namespace Proyecto_Final.Vistas
         private void btnInscribirSocio_Click(object sender, EventArgs e)
         {
 
-            // Abrir frmPrincipal
-            FrmInscribirSocio inicio = new FrmInscribirSocio();
+            FrmInscribirSocio inicio = new FrmInscribirSocio(_dni);
             inicio.Show();
 
             // Cerrar el formulario actual
@@ -25,7 +25,8 @@ namespace Proyecto_Final.Vistas
         private void btnCobrarCuota_Click(object sender, EventArgs e)
         {
             // Abrir frmCobrarCuota
-            frmPagoCuotaSocial inicio = new frmPagoCuotaSocial();
+            frmPagoCuotaSocial inicio = new frmPagoCuotaSocial(_dni);
+
             inicio.Show();
             // Cerrar el formulario actual
             this.Hide(); // o this.Hide(); si querés solo ocultarlo
@@ -34,7 +35,7 @@ namespace Proyecto_Final.Vistas
         private void btnGenerarCarnet_Click(object sender, EventArgs e)
         {
             // Abrir frmGenerarCarnet
-            FrmGenerarCarnet inicio = new FrmGenerarCarnet();
+            FrmGenerarCarnet inicio = new FrmGenerarCarnet(_dni);
             inicio.Show();
             // Cerrar el formulario actual
             this.Hide(); // o this.Hide(); si querés solo ocultarlo
@@ -42,7 +43,7 @@ namespace Proyecto_Final.Vistas
         private void btnInscribirNoSocio_Click(object sender, EventArgs e)
         {
             // Abrir frmInscribirNoSocio
-            FrmInscribirNoSocio inicio = new FrmInscribirNoSocio();
+            FrmInscribirNoSocio inicio = new FrmInscribirNoSocio(_dni);
             inicio.Show();
 
             // Cerrar el formulario actual

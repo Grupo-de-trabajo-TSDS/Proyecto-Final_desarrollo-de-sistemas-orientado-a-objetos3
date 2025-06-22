@@ -4,6 +4,9 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
+using System.Collections.Generic;
+using System.Net;
 
 namespace Proyecto_Final
 {
@@ -56,13 +59,13 @@ namespace Proyecto_Final
             primerControl?.Focus();
         }
 
-        public static  bool ValidarCampoNoVacio(Control control, string nombreCampo)
+        public static bool ValidarCampoNoVacio(Control control, string nombreCampo)
         {
             if (string.IsNullOrWhiteSpace(control.Text))
             {
                 control.BackColor = Color.MistyRose;
                 MessageBox.Show($"El campo {nombreCampo} no puede estar vacío.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                
+
                 return false;
             }
             control.BackColor = SystemColors.Window;
@@ -83,7 +86,7 @@ namespace Proyecto_Final
 
         public static bool ValidarNumerico(Control control, string nombreCampo)
         {
-            if ( !int.TryParse(control.Text, out int value) || value==0 )
+            if (!long.TryParse(control.Text, out long value) || value == 0)
             {
                 control.BackColor = Color.MistyRose;
                 MessageBox.Show($"El campo {nombreCampo} debe ser numérico.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -106,7 +109,6 @@ namespace Proyecto_Final
         }
 
         public static DataTable CrearTablaDesdeDb(string query)
-
         {
             try
             {
@@ -118,7 +120,6 @@ namespace Proyecto_Final
                     da.Fill(dt);
                     return dt;
                 };
-                
             }
             catch
             {
@@ -127,8 +128,176 @@ namespace Proyecto_Final
             }
         }
 
+        public static (string apellido, string nombre, string tipoCliente, string deudor) ExisteClientePorDNI(string dni)
+        {
+            var contenido = (apellido: "", nombre: "", tipoCliente: "", deudor: "");
+            using (Conexion conpar = new Conexion())
+            {
+                using (MySqlConnection conn = conpar.Abrir())
+                {
+                    string query = "SELECT apellido, nombre, estado FROM Socio WHERE dni = @dni";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@dni", dni);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                int valor = reader.GetInt32(reader.GetOrdinal("estado"));
+                                contenido.apellido = reader["apellido"]?.ToString() ?? "";
+                                contenido.nombre = reader["nombre"]?.ToString() ?? "";
+                                contenido.tipoCliente = "Socio";
+                                contenido.deudor = (valor > 0) ? "Sin deuda" : "Con Deuda";
+                            }
+                        }
+                    }
+                    if (contenido.apellido == "" && contenido.nombre == "")
+                    {
+                        query = "SELECT apellido, nombre FROM NoSocio WHERE dni = @dni";
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@dni", dni);
+                            using (var reader = cmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    contenido.apellido = reader["apellido"]?.ToString() ?? "";
+                                    contenido.nombre = reader["nombre"]?.ToString() ?? "";
+                                    contenido.tipoCliente = "NoSocio";
+                                    contenido.deudor = "--";
+                                }
+
+                            }
+                        }
+                    }
+                }
+                conpar.Cerrar();
+                if (contenido.apellido == "" && contenido.nombre == "")
+                {
+                    return (null, null, null, null); // No se encontró el cliente
+                }
+                else
+                {
+                    return (contenido.apellido, contenido.nombre, contenido.tipoCliente, contenido.deudor); // Se encontró el cliente
+                }
+            }
+        }
+
+        public static void Actualizar_status_socios()
+        {
+            string query = @"
+            UPDATE Socio s
+            LEFT JOIN (
+            SELECT idsocio, MAX(fechapago) AS ult_fechapago
+            FROM Cuota
+            GROUP BY idsocio
+            ) c ON s.dni = c.idsocio
+            SET s.estado = CASE
+            WHEN c.ult_fechapago IS NULL THEN 0
+            WHEN DATE_ADD(c.ult_fechapago, INTERVAL 31 DAY) < CURDATE() THEN 0
+            ELSE 1
+            END
+            ";
+            
+            try
+            {
+                using (var conn = new Conexion())
+                {
+                    using (var cmd = new MySqlCommand(query, conn.Abrir()))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error actualizando estado de socios: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static Socio ObtenerSocioPorDni(string dni)
+        {
+            try
+            {
+                using (var conn = new Conexion())
+                {
+                    var con = conn.Abrir();
+                    string query = @"SELECT dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed, estado
+                             FROM Socio WHERE dni = @dni";
+                    using (var cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@dni", dni);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Adjust column indexes/names as needed
+                                return new Socio(
+                                    reader["dni"].ToString(),
+                                    reader["apellido"].ToString(),
+                                    reader["nombre"].ToString(),
+                                    reader["fechanac"].ToString(),
+                                    reader["fechainscrip"].ToString(),
+                                    reader["direccion"].ToString(),
+                                    reader["email"].ToString(),
+                                    reader["telefono"].ToString(),
+                                    reader["conturgencia"].ToString(),
+                                    reader["fichamed"].ToString(),
+                                    Convert.ToBoolean(reader["estado"])
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el socio: " + ex.Message);
+            }
+            return null;
+        }
+    
+        public static NoSocio ObtenerNoSocioPorDni(string dni)
+        {
+            try
+            {
+                using (var conn = new Conexion())
+                {
+                    var con = conn.Abrir();
+                    string query = @"SELECT dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed
+                             FROM NoSocio WHERE dni = @dni";
+                    using (var cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@dni", dni);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Adjust column indexes/names as needed
+                                return new NoSocio(
+                                    reader["dni"].ToString(),
+                                    reader["apellido"].ToString(),
+                                    reader["nombre"].ToString(),
+                                    reader["fechanac"].ToString(),
+                                    reader["fechainscrip"].ToString(),
+                                    reader["direccion"].ToString(),
+                                    reader["email"].ToString(),
+                                    reader["telefono"].ToString(),
+                                    reader["conturgencia"].ToString(),
+                                    reader["fichamed"].ToString()
+                                    );
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el socio: " + ex.Message);
+            }
+            return null;
+        }
     }
-
-
 }
-

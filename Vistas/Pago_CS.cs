@@ -11,43 +11,124 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class frmPagoCuotaSocial : Form
+    public partial class frmpagoCuotaSocial : Form
     {
-        public frmPagoCuotaSocial()
+        string Dni = null;
+        private Socio nuevo1=null;
+        private Socio existente=null;
+        string modoSeleccionado;
+
+        //En las siguientes lineas, la sobrecarga del constructor de formulario
+        //frmpagoCuotaSocial permite recibir un DNI o un objeto Socio.
+        //Esto permite que el formulario pueda ser utilizado tanto para registrar un nuevo socio
+        //como para procesar el pago de la cuota social de un socio ya existente.
+
+        public frmpagoCuotaSocial(string dni)
         {
+            Dni = dni;
             InitializeComponent();
-            LlenarTipoSocio();
+            txtSocioDni.Text = Dni;
+            txtSocioDni.Enabled = false; // Desactivar el campo DNI para evitar edición
+            LlenarFormaPago();
+            txtMonto.Text = ""; // Inicializar el campo de monto a vacío
+            this.existente = Utilidades.ObtenerSocioPorDni(Dni);
         }
 
+        public frmpagoCuotaSocial(Socio nuevo)
+        {
+            this.nuevo1 = nuevo;
+            InitializeComponent();
+            txtSocioDni.Text = nuevo1.Dni;
+            txtSocioDni.Enabled = false; // Desactivar el campo DNI para evitar edición
+            LlenarFormaPago();
+            txtMonto.Text = ""; // Inicializar el campo de monto a vacío
+        }
+
+
+        private void LlenarFormaPago()
+        {
+            // Llenar el ComboBox con las formas de pago
+            cboFormasDePago.Items.Clear();
+            cboFormasDePago.Items.Add("Contado");
+            cboFormasDePago.Items.Add("1 Cuota");
+            cboFormasDePago.Items.Add("3 cuotas");
+            cboFormasDePago.Items.Add("6 cuotas");
+            cboFormasDePago.SelectedIndex = 0; // Seleccionar el primer elemento por defecto
+        }
         private void cboFormasDePago_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboFormasDePago.SelectedIndex = 0; // Selects "Item 1"
+            modoSeleccionado = cboFormasDePago.Text;
         }
 
-        private void txtMontoCuotaSocio_TextChanged(object sender, EventArgs e)
-        {
 
-            
+
+        private void btnpagado_Click(object sender, EventArgs e)
+        {
+            ProcesarPagoCuota();
         }
 
-        private void frmPagoCuotaSocial_Load(object sender, EventArgs e)
+        private void ProcesarPagoCuota()
         {
+            if (nuevo1 == null)
+            {
+                bool pagado = existente.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
 
+                if (pagado)
+                {
+                    MessageBox.Show("Pago de cuota realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Utilidades.Actualizar_status_socios();
+                    new frmInicial().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error al procesar el pago de la cuota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                bool guardado = nuevo1.inscripcionSocio(nuevo1);
+
+                if (guardado)
+                {
+                    MessageBox.Show("Inscripción Socio exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new frmInicial().Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                bool pagado = nuevo1.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
+
+                if (pagado)
+                {
+                    MessageBox.Show("Pago de Primera cuota realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new frmInicial().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error al procesar el pago de la cuota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
         }
 
-        private void LlenarTipoSocio()
+        private void btnvolver_Click(object sender, EventArgs e)
         {
-            
-            string query = "SELECT categoria, valorcuota FROM cuotasocios";
-            cboTipoSocio.DataSource = Utilidades.CrearTablaDesdeDb(query);
-            cboTipoSocio.DisplayMember = "categoria";
-            cboTipoSocio.ValueMember = "valorcuota";
+            new frmInicial().Show();
+            this.Close();
         }
 
-        private void cboTipoSocio_TextChanged(object sender, EventArgs e)
+        private void txtMonto_Leave(object sender, EventArgs e)
         {
-            var valorSeleccionado = cboTipoSocio.SelectedValue; // valorcuota
-            var categoriaSeleccionada = cboTipoSocio.Text;      // categoria
+            if (!Utilidades.ValidarNumerico(txtMonto, "Monto"))
+            {
+                txtMonto.Focus(); // Volver a enfocar el campo de monto si no es numérico
+            }
         }
     }
 }

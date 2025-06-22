@@ -176,6 +176,12 @@
     <Compile Include="Vistas\emitirCarnet.Designer.cs">
       <DependentUpon>emitirCarnet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ListadoMorosos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,23 +200,11 @@
     <Compile Include="Vistas\Pago_CS.Designer.cs">
       <DependentUpon>Pago_CS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\inscribir_nosocio.cs">
+    <Compile Include="Vistas\inscribir_cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\inscribir_nosocio.Designer.cs">
-      <DependentUpon>inscribir_nosocio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\inscribir_socio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\inscribir_socio.Designer.cs">
-      <DependentUpon>inscribir_socio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\principal.Designer.cs">
-      <DependentUpon>principal.cs</DependentUpon>
+    <Compile Include="Vistas\inscribir_cliente.Designer.cs">
+      <DependentUpon>inscribir_cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\login.cs">
       <SubType>Form</SubType>
@@ -226,6 +220,9 @@
     <EmbeddedResource Include="Vistas\emitirCarnet.resx">
       <DependentUpon>emitirCarnet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ListadoMorosos.resx">
       <DependentUpon>ListadoMorosos.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,17 +232,11 @@
     <EmbeddedResource Include="Vistas\Pago_CS.resx">
       <DependentUpon>Pago_CS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\inscribir_nosocio.resx">
-      <DependentUpon>inscribir_nosocio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\inscribir_socio.resx">
-      <DependentUpon>inscribir_socio.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\inscribir_cliente.resx">
+      <DependentUpon>inscribir_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\login.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\principal.resx">
-      <DependentUpon>principal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Imagenes\c56bdcd971c348a97de9d59a7cac8f92-atleta-corriendo-duro.webp" />
     <None Include="packages.config" />
