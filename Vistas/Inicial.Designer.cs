@@ -44,8 +44,8 @@
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pnlSocio = new System.Windows.Forms.Panel();
-            this.btnimprimeCarnet = new System.Windows.Forms.Button();
             this.btnpagaCuota = new System.Windows.Forms.Button();
+            this.btnimprimeCarnet = new System.Windows.Forms.Button();
             this.pnlnoSocio = new System.Windows.Forms.Panel();
             this.btnimprimirCarnet = new System.Windows.Forms.Button();
             this.btninscribirActividad = new System.Windows.Forms.Button();
@@ -206,16 +206,6 @@
             this.pnlSocio.Size = new System.Drawing.Size(530, 61);
             this.pnlSocio.TabIndex = 4;
             // 
-            // btnimprimeCarnet
-            // 
-            this.btnimprimeCarnet.Location = new System.Drawing.Point(333, 11);
-            this.btnimprimeCarnet.Name = "btnimprimeCarnet";
-            this.btnimprimeCarnet.Size = new System.Drawing.Size(142, 39);
-            this.btnimprimeCarnet.TabIndex = 1;
-            this.btnimprimeCarnet.Text = "Imprimir Carnet";
-            this.btnimprimeCarnet.UseVisualStyleBackColor = true;
-            this.btnimprimeCarnet.Click += new System.EventHandler(this.btnimprimeCarnet_Click);
-            // 
             // btnpagaCuota
             // 
             this.btnpagaCuota.Location = new System.Drawing.Point(56, 11);
@@ -225,6 +215,16 @@
             this.btnpagaCuota.Text = "Pagar cuota";
             this.btnpagaCuota.UseVisualStyleBackColor = true;
             this.btnpagaCuota.Click += new System.EventHandler(this.btnpagaCuota_Click);
+            // 
+            // btnimprimeCarnet
+            // 
+            this.btnimprimeCarnet.Location = new System.Drawing.Point(333, 11);
+            this.btnimprimeCarnet.Name = "btnimprimeCarnet";
+            this.btnimprimeCarnet.Size = new System.Drawing.Size(142, 39);
+            this.btnimprimeCarnet.TabIndex = 1;
+            this.btnimprimeCarnet.Text = "Imprimir Carnet";
+            this.btnimprimeCarnet.UseVisualStyleBackColor = true;
+            this.btnimprimeCarnet.Click += new System.EventHandler(this.btnimprimeCarnet_Click);
             // 
             // pnlnoSocio
             // 
@@ -315,7 +315,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmInicial_FormClosed);
-            this.Load += new System.EventHandler(this.frmInicial_Load);
             this.pnlResultado.ResumeLayout(false);
             this.pnlResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

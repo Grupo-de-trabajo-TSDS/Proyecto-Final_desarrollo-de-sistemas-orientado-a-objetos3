@@ -120,7 +120,7 @@ namespace Proyecto_Final.Vistas
         private void btnvolver_Click(object sender, EventArgs e)
         {
             new frmInicial().Show();
-            this.Close();
+            this.Hide();
         }
 
         private void txtMonto_Leave(object sender, EventArgs e)

@@ -176,14 +176,14 @@ public class NoSocio : Persona
             using (var conn = new Conexion())
             {
                 var con = conn.Abrir();
-                string query = @"INSERT INTO Pago_Actividad (idactividad, idnsocio, fechapago, precioactividad, metodopago)
+                string query = @"INSERT INTO pagoactividad (idactividad, idnsocio, fechapago, precioactividad, metodopago)
                              VALUES (@idactividad, @dni, @valor, @fecha, @modo)";
                 using (var cmd = new MySqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@idactividad", idactividad.ToString());
                     cmd.Parameters.AddWithValue("@dni", this.Dni);
-                    cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                     cmd.Parameters.AddWithValue("@valor", valor.ToString());
+                    cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                     cmd.Parameters.AddWithValue("@modo", modo);
 
                     int resultado = cmd.ExecuteNonQuery();

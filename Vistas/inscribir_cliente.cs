@@ -33,7 +33,7 @@ namespace Proyecto_Final.Vistas
             inicio.Show();
 
             // Cerrar el formulario actual
-            this.Close();
+            this.Hide();
         }
 
         private void FrmInscribirCiente_FormClosed(object sender, FormClosedEventArgs e)
@@ -106,7 +106,7 @@ namespace Proyecto_Final.Vistas
             dtpFechaNacimientoCliente.CustomFormat = "dd/MM/yyyy";
             Socio nuevo = null;
             NoSocio nuevoNoSocio = null;
-            this.Close();
+            this.Hide();
 
             if (tipo == "Socio")
             {

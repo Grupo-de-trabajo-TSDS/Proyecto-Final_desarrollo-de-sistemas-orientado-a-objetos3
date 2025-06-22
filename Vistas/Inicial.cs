@@ -70,33 +70,31 @@ namespace Proyecto_Final.Vistas
 
         private void btninscrpcionSocio_Click(object sender, EventArgs e)
         {
-           frminscribirCliente inicio = new frminscribirCliente(txtDniInicial.Text.Trim(),"Socio");
+            this.Hide();
+            frminscribirCliente inicio = new frminscribirCliente(txtDniInicial.Text.Trim(),"Socio");
             inicio.Show();
-            this.Close();
-        }
-
-        private void frmInicial_Load(object sender, EventArgs e)
-        {
-
+          
         }
 
         private void btninscripcionNoSocio_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frminscribirCliente inicio = new frminscribirCliente(txtDniInicial.Text.Trim(), "No Socio");
             inicio.Show();
-            this.Close();
+           
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void btnpagaCuota_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmpagoCuotaSocial pago = new frmpagoCuotaSocial(txtDniInicial.Text.Trim());
             pago.Show();
-            this.Close();
+            
         }
         private void btnimprimeCarnet_Click(object sender, EventArgs e)
         {
@@ -105,9 +103,10 @@ namespace Proyecto_Final.Vistas
 
         private void btninscribirActividad_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmregActividad regActividad = new frmregActividad(txtDniInicial.Text.Trim());
             regActividad.Show();
-            this.Close();
+            
         }
 
         private void btnimprimirCarnet_Click(object sender, EventArgs e)

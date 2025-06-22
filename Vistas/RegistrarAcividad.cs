@@ -43,6 +43,7 @@ namespace Proyecto_Final.Vistas
             cboActividades.DisplayMember = "descripact";
             cboActividades.ValueMember = "descripact"; // or use a unique key if available
             LlenarFormaPago();
+            modoSeleccionado = cboFormasDePago.Text;
         }
 
         private void LlenarFormaPago()
@@ -53,7 +54,8 @@ namespace Proyecto_Final.Vistas
             cboFormasDePago.Items.Add("1 Cuota");
             cboFormasDePago.Items.Add("3 cuotas");
             cboFormasDePago.Items.Add("6 cuotas");
-            cboFormasDePago.SelectedIndex = 0; // Seleccionar el primer elemento por defecto
+            cboFormasDePago.SelectedIndex = 0;
+            modoSeleccionado = cboFormasDePago.Text;
         }
         private void cboFormasDePago_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -92,7 +94,7 @@ namespace Proyecto_Final.Vistas
                 if (pagado)
                 {
                     MessageBox.Show("Pago de Actividad realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    this.Hide();
                     new frmInicial().Show();
                     
                 }
@@ -108,7 +110,7 @@ namespace Proyecto_Final.Vistas
                 if (guardado)
                 {
                     MessageBox.Show("Inscripción No Socio exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    this.Hide();
                     new frmInicial().Show();
                     
 
@@ -124,7 +126,7 @@ namespace Proyecto_Final.Vistas
                 {
 
                     MessageBox.Show("Pago de Primera Actividad realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    this.Hide();
                     new frmInicial().Show();
                     
                 }
@@ -138,7 +140,7 @@ namespace Proyecto_Final.Vistas
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             new frmInicial().Show();
         }
 
