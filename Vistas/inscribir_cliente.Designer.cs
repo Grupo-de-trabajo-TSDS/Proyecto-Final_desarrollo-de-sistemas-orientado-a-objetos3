@@ -36,6 +36,8 @@ namespace Proyecto_Final.Vistas
             this.btnContinuar = new System.Windows.Forms.Button();
             this.btnVolverSocio = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_dni = new System.Windows.Forms.Label();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.txtDireccionCliente = new System.Windows.Forms.TextBox();
             this.txtEmailCliente = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@ namespace Proyecto_Final.Vistas
             this.txtContactoEmergenciaCliente = new System.Windows.Forms.TextBox();
             this.txtFichaMedicaCliente = new System.Windows.Forms.TextBox();
             this.dtpFechaNacimientoCliente = new System.Windows.Forms.DateTimePicker();
-            this.lbl_dni = new System.Windows.Forms.Label();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.lblTitleSocio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -110,6 +110,32 @@ namespace Proyecto_Final.Vistas
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(631, 302);
             this.tableLayoutPanel1.TabIndex = 11;
+            // 
+            // lbl_dni
+            // 
+            this.lbl_dni.AutoSize = true;
+            this.lbl_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dni.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_dni.Location = new System.Drawing.Point(3, 3);
+            this.lbl_dni.Margin = new System.Windows.Forms.Padding(3);
+            this.lbl_dni.Name = "lbl_dni";
+            this.lbl_dni.Size = new System.Drawing.Size(0, 20);
+            this.lbl_dni.TabIndex = 1;
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCliente.Location = new System.Drawing.Point(213, 3);
+            this.txtNombreCliente.Multiline = true;
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(180, 23);
+            this.txtNombreCliente.TabIndex = 1;
+            this.txtNombreCliente.Tag = "Ingrese el nombre";
+            this.txtNombreCliente.Text = "NOMBRE";
+            this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtNombreCliente, "Nombre");
+            this.txtNombreCliente.Leave += new System.EventHandler(this.txtNombreCliente_Leave);
             // 
             // txtApellidoCliente
             // 
@@ -205,32 +231,6 @@ namespace Proyecto_Final.Vistas
             this.dtpFechaNacimientoCliente.TabIndex = 3;
             this.dtpFechaNacimientoCliente.Leave += new System.EventHandler(this.dtpFechaNacimientoCliente_Leave);
             // 
-            // lbl_dni
-            // 
-            this.lbl_dni.AutoSize = true;
-            this.lbl_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dni.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_dni.Location = new System.Drawing.Point(3, 3);
-            this.lbl_dni.Margin = new System.Windows.Forms.Padding(3);
-            this.lbl_dni.Name = "lbl_dni";
-            this.lbl_dni.Size = new System.Drawing.Size(0, 20);
-            this.lbl_dni.TabIndex = 1;
-            // 
-            // txtNombreCliente
-            // 
-            this.txtNombreCliente.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCliente.Location = new System.Drawing.Point(213, 3);
-            this.txtNombreCliente.Multiline = true;
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(180, 23);
-            this.txtNombreCliente.TabIndex = 1;
-            this.txtNombreCliente.Tag = "Ingrese el nombre";
-            this.txtNombreCliente.Text = "NOMBRE";
-            this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.txtNombreCliente, "Nombre");
-            this.txtNombreCliente.Leave += new System.EventHandler(this.txtNombreCliente_Leave);
-            // 
             // lblTitleSocio
             // 
             this.lblTitleSocio.AutoSize = true;
@@ -271,6 +271,7 @@ namespace Proyecto_Final.Vistas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscripción";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmInscribirCiente_FormClosed);
+            this.Load += new System.EventHandler(this.frminscribirCliente_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

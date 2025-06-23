@@ -130,5 +130,10 @@ namespace Proyecto_Final.Vistas
                 txtMonto.Focus(); // Volver a enfocar el campo de monto si no es numérico
             }
         }
+
+        private void frmpagoCuotaSocial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

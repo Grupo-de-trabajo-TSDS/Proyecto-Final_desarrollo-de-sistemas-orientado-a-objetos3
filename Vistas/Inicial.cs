@@ -14,6 +14,8 @@ namespace Proyecto_Final.Vistas
     
     public partial class frmInicial : Form
     {
+        string tipo = "";
+        string _Dni = "";
         public frmInicial()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace Proyecto_Final.Vistas
                 var resultado = Utilidades.ExisteClientePorDNI(dni);
                 if (resultado.nombre != null)
                 {
+                    _Dni = dni; 
                     MessageBox.Show("Este DNI ya está registrado.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     dataGridView.Rows.Clear();
                     dataGridView.Rows.Add(resultado.nombre, resultado.apellido, resultado.tipoCliente, resultado.deudor);
@@ -42,12 +45,14 @@ namespace Proyecto_Final.Vistas
                     pnlinscrip.Visible = false;
                     if (resultado.tipoCliente == "Socio")
                     {
+                        tipo = "Socio";
                         Socio objsocio = Utilidades.ObtenerSocioPorDni(dni);
                         pnlSocio.Visible = true;
                         pnlnoSocio.Visible = false;
                     }
                     else 
                     {
+                        tipo = "No Socio";
                         NoSocio objnoSocio = Utilidades.ObtenerNoSocioPorDni(dni);
                         pnlnoSocio.Visible = true;
                         pnlSocio.Visible = false;
@@ -98,7 +103,9 @@ namespace Proyecto_Final.Vistas
         }
         private void btnimprimeCarnet_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FrmGenerarCarnet generarCarnet = new FrmGenerarCarnet(_Dni, tipo);
+            generarCarnet.Show();
         }
 
         private void btninscribirActividad_Click(object sender, EventArgs e)
@@ -111,10 +118,17 @@ namespace Proyecto_Final.Vistas
 
         private void btnimprimirCarnet_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FrmGenerarCarnet generarCarnet = new FrmGenerarCarnet(_Dni, tipo);
+            generarCarnet.Show();
         }
 
         private void btnListadoMorosos_Click(object sender, EventArgs e)
+        {
+            new Proyecto_Final.Vistas.FrmListadoMorosos().ShowDialog();
+        }
+
+        private void frmInicial_Load(object sender, EventArgs e)
         {
 
         }

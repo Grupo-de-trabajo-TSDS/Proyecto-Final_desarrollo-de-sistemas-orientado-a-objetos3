@@ -2,15 +2,10 @@
 {
     partial class FrmListadoMorosos
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.DataGridView dgvMorosos;
+        private System.Windows.Forms.Button btnCerrar;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,28 +15,46 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.dgvMorosos = new System.Windows.Forms.DataGridView();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMorosos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvMorosos
+            // 
+            this.dgvMorosos.AllowUserToAddRows = false;
+            this.dgvMorosos.AllowUserToDeleteRows = false;
+            this.dgvMorosos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMorosos.Location = new System.Drawing.Point(12, 12);
+            this.dgvMorosos.Name = "dgvMorosos";
+            this.dgvMorosos.ReadOnly = true;
+            this.dgvMorosos.Size = new System.Drawing.Size(760, 400);
+            this.dgvMorosos.TabIndex = 0;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(697, 420);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmListadoMorosos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.dgvMorosos);
             this.Name = "FrmListadoMorosos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de Socios Morosos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMorosos)).EndInit();
             this.ResumeLayout(false);
-
         }
-
-        #endregion
     }
 }

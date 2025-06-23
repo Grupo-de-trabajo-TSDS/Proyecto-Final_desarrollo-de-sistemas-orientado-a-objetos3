@@ -16,10 +16,31 @@ namespace Proyecto_Final.Vistas
 {
     public partial class FrmGenerarCarnet : Form
     {
-        public FrmGenerarCarnet()
+        NoSocio nosocio = null;
+        Socio socio = null;
+        public FrmGenerarCarnet(string dni, string tipo)
         {
             InitializeComponent();
-            
+            if(tipo == "Socio")
+            {
+                socio = Utilidades.ObtenerSocioPorDni(dni);
+                lblNombre.Text = socio.Nombre;
+                lblApellido.Text = socio.Apellido;
+                lblTipo.Text = "Socio";
+                lblFechaInscrip.Text = socio.Fechainscrip.ToString();
+                txtDni.Text = socio.Dni;
+
+            }
+            else if (tipo == "No Socio")
+            {
+                nosocio = Utilidades.ObtenerNoSocioPorDni(dni);
+                lblNombre.Text = nosocio.Nombre;
+                lblApellido.Text = nosocio.Apellido;
+                lblTipo.Text = "No Socio";
+                lblFechaInscrip.Text = nosocio.Fechainscrip.ToString();
+                txtDni.Text = nosocio.Dni;
+            }
+
         }
 
         private FilterInfoCollection videoDevices;
@@ -78,6 +99,13 @@ namespace Proyecto_Final.Vistas
         private void FrmGenerarCarnet_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVolverAnterior_Click(object sender, EventArgs e)
+        {
+            frmInicial inicio = new frmInicial();
+            inicio.Show();
+            this.Hide();
         }
     }
 

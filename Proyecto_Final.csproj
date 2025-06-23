@@ -176,17 +176,17 @@
     <Compile Include="Vistas\emitirCarnet.Designer.cs">
       <DependentUpon>emitirCarnet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Inicial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Inicial.Designer.cs">
-      <DependentUpon>Inicial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\ListadoMorosos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\ListadoMorosos.Designer.cs">
       <DependentUpon>ListadoMorosos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\RegistrarAcividad.cs">
       <SubType>Form</SubType>

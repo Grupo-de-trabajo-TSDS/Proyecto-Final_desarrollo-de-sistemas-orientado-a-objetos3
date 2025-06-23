@@ -315,6 +315,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmInicial_FormClosed);
+            this.Load += new System.EventHandler(this.frmInicial_Load);
             this.pnlResultado.ResumeLayout(false);
             this.pnlResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

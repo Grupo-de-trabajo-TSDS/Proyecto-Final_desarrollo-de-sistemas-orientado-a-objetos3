@@ -100,6 +100,11 @@ namespace Proyecto_Final.Vistas
                 txtFichaMedicaCliente.Focus();
         }
 
+        private void frminscribirCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btncontinuar_Click(object sender, EventArgs e)
         {
             dtpFechaNacimientoCliente.Format = DateTimePickerFormat.Custom;

@@ -299,5 +299,11 @@ namespace Proyecto_Final
             }
             return null;
         }
+
+        public static DataTable ObtenerSociosMorosos()
+        {
+            string query = "SELECT dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono FROM Socio WHERE estado = 0";
+            return CrearTablaDesdeDb(query);
+        }
     }
 }

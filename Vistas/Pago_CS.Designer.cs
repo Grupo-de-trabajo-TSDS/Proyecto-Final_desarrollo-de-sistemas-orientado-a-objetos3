@@ -152,6 +152,7 @@
             this.Name = "frmpagoCuotaSocial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pago Cuota Social";
+            this.Load += new System.EventHandler(this.frmpagoCuotaSocial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|j:\\users\\ospos\\documents\\github\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos3\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\registraracividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\registraracividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|j:\\users\\ospos\\documents\\github\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos3\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\pago_cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,52 +15,20 @@
       "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\pago_cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\registraracividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\registraracividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\inscribir_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\inscribir_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\emitircarnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\emitircarnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\listadomorosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\listadomorosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\listadomorosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\listadomorosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\emitircarnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\emitircarnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -78,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,210 +58,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "login.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
-              "RelativeDocumentMoniker": "Vistas\\login.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
-              "RelativeToolTip": "Vistas\\login.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowB0AAAA2AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Utilidades.cs",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Utilidades.cs",
+              "RelativeDocumentMoniker": "Utilidades.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Utilidades.cs",
+              "RelativeToolTip": "Utilidades.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAYwA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T02:30:45.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "login.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
-              "RelativeDocumentMoniker": "Vistas\\login.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs [Design]",
-              "RelativeToolTip": "Vistas\\login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T02:29:55.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Inicial.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Inicial.cs",
-              "RelativeDocumentMoniker": "Vistas\\Inicial.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Inicial.cs",
-              "RelativeToolTip": "Vistas\\Inicial.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAvwEgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T23:12:07.452Z",
+              "WhenOpened": "2025-06-23T00:36:38.964Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Inicial.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Inicial.cs",
-              "RelativeDocumentMoniker": "Vistas\\Inicial.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Inicial.cs [Design]",
-              "RelativeToolTip": "Vistas\\Inicial.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T17:09:35.79Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "inscribir_cliente.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
-              "RelativeDocumentMoniker": "Vistas\\inscribir_cliente.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
-              "RelativeToolTip": "Vistas\\inscribir_cliente.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAEwCMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T02:49:33.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "inscribir_cliente.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
-              "RelativeDocumentMoniker": "Vistas\\inscribir_cliente.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs [Design]",
-              "RelativeToolTip": "Vistas\\inscribir_cliente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T02:49:27.955Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "emitirCarnet.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\emitirCarnet.cs",
-              "RelativeDocumentMoniker": "Vistas\\emitirCarnet.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\emitirCarnet.cs",
-              "RelativeToolTip": "Vistas\\emitirCarnet.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T16:52:33.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegistrarAcividad.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\RegistrarAcividad.cs",
-              "RelativeDocumentMoniker": "Vistas\\RegistrarAcividad.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\RegistrarAcividad.cs",
-              "RelativeToolTip": "Vistas\\RegistrarAcividad.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwC0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T17:22:10.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegistrarAcividad.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\RegistrarAcividad.cs",
-              "RelativeDocumentMoniker": "Vistas\\RegistrarAcividad.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\RegistrarAcividad.cs [Design]",
-              "RelativeToolTip": "Vistas\\RegistrarAcividad.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T04:51:11.686Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAwwKwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T00:19:18.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pago_CS.cs",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs",
+              "RelativeDocumentMoniker": "Vistas\\Pago_CS.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs",
+              "RelativeToolTip": "Vistas\\Pago_CS.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwCQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T00:34:28.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Pago_CS.cs [Design]",
               "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs",
               "RelativeDocumentMoniker": "Vistas\\Pago_CS.cs",
               "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs [Design]",
               "RelativeToolTip": "Vistas\\Pago_CS.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T03:35:57.799Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-23T00:34:24.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pago_CS.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs",
-              "RelativeDocumentMoniker": "Vistas\\Pago_CS.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\Pago_CS.cs",
-              "RelativeToolTip": "Vistas\\Pago_CS.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAswF0AAAA3AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "inscribir_cliente.cs",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_cliente.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
+              "RelativeToolTip": "Vistas\\inscribir_cliente.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T03:36:41.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Class1.cs",
-              "RelativeDocumentMoniker": "Class1.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Class1.cs",
-              "RelativeToolTip": "Class1.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAkwKwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T01:24:10.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T00:22:16.133Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Utilidades.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Utilidades.cs",
-              "RelativeDocumentMoniker": "Utilidades.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Utilidades.cs",
-              "RelativeToolTip": "Utilidades.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAwOsAAAAMAAAAAAAAAA==",
+              "Title": "inscribir_cliente.cs [Design]",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_cliente.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\inscribir_cliente.cs [Design]",
+              "RelativeToolTip": "Vistas\\inscribir_cliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:39:42.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T00:22:00.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Conexion.cs",
-              "RelativeDocumentMoniker": "Conexion.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Conexion.cs",
-              "RelativeToolTip": "Conexion.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "login.cs",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
+              "RelativeDocumentMoniker": "Vistas\\login.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
+              "RelativeToolTip": "Vistas\\login.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:38:34.295Z"
+              "WhenOpened": "2025-06-23T00:21:32.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ListadoMorosos.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\ListadoMorosos.cs",
-              "RelativeDocumentMoniker": "Vistas\\ListadoMorosos.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\ListadoMorosos.cs [Design]",
-              "RelativeToolTip": "Vistas\\ListadoMorosos.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "login.cs [Design]",
+              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs",
+              "RelativeDocumentMoniker": "Vistas\\login.cs",
+              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\login.cs [Design]",
+              "RelativeToolTip": "Vistas\\login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T04:53:02.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ListadoMorosos.cs",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\ListadoMorosos.cs",
-              "RelativeDocumentMoniker": "Vistas\\ListadoMorosos.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\ListadoMorosos.cs",
-              "RelativeToolTip": "Vistas\\ListadoMorosos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T17:21:44.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "emitirCarnet.cs [Design]",
-              "DocumentMoniker": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\emitirCarnet.cs",
-              "RelativeDocumentMoniker": "Vistas\\emitirCarnet.cs",
-              "ToolTip": "J:\\Users\\ospos\\Documents\\GitHub\\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\\Vistas\\emitirCarnet.cs [Design]",
-              "RelativeToolTip": "Vistas\\emitirCarnet.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T16:51:44.299Z"
+              "WhenOpened": "2025-06-23T00:21:09.138Z"
             }
           ]
         },
